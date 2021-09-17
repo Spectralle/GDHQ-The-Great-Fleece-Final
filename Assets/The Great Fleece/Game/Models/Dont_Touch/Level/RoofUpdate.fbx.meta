@@ -1,0 +1,345 @@
+fileFormatVersion: 2
+guid: 8cfc5a5185676408cbb7303c7fdf5bca
+timeCreated: 1509738125
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: CINEMA_4D_Editor
+    100002: Cloner
+    100004: CofferCeiling_0
+    100006: CofferCeiling_1
+    100008: CofferCeiling_10
+    100010: CofferCeiling_11
+    100012: CofferCeiling_12
+    100014: CofferCeiling_13
+    100016: CofferCeiling_14
+    100018: CofferCeiling_15
+    100020: CofferCeiling_16
+    100022: CofferCeiling_17
+    100024: CofferCeiling_18
+    100026: CofferCeiling_19
+    100028: CofferCeiling_2
+    100030: CofferCeiling_20
+    100032: CofferCeiling_21
+    100034: CofferCeiling_22
+    100036: CofferCeiling_23
+    100038: CofferCeiling_3
+    100040: CofferCeiling_4
+    100042: CofferCeiling_5
+    100044: CofferCeiling_6
+    100046: CofferCeiling_7
+    100048: CofferCeiling_8
+    100050: CofferCeiling_9
+    100052: RoofBorder
+    100054: //RootNode
+    400000: CINEMA_4D_Editor
+    400002: Cloner
+    400004: CofferCeiling_0
+    400006: CofferCeiling_1
+    400008: CofferCeiling_10
+    400010: CofferCeiling_11
+    400012: CofferCeiling_12
+    400014: CofferCeiling_13
+    400016: CofferCeiling_14
+    400018: CofferCeiling_15
+    400020: CofferCeiling_16
+    400022: CofferCeiling_17
+    400024: CofferCeiling_18
+    400026: CofferCeiling_19
+    400028: CofferCeiling_2
+    400030: CofferCeiling_20
+    400032: CofferCeiling_21
+    400034: CofferCeiling_22
+    400036: CofferCeiling_23
+    400038: CofferCeiling_3
+    400040: CofferCeiling_4
+    400042: CofferCeiling_5
+    400044: CofferCeiling_6
+    400046: CofferCeiling_7
+    400048: CofferCeiling_8
+    400050: CofferCeiling_9
+    400052: RoofBorder
+    400054: //RootNode
+    2000000: CINEMA_4D_Editor
+    2300000: CofferCeiling_0
+    2300002: CofferCeiling_1
+    2300004: CofferCeiling_10
+    2300006: CofferCeiling_11
+    2300008: CofferCeiling_12
+    2300010: CofferCeiling_13
+    2300012: CofferCeiling_14
+    2300014: CofferCeiling_15
+    2300016: CofferCeiling_16
+    2300018: CofferCeiling_17
+    2300020: CofferCeiling_18
+    2300022: CofferCeiling_19
+    2300024: CofferCeiling_2
+    2300026: CofferCeiling_20
+    2300028: CofferCeiling_21
+    2300030: CofferCeiling_22
+    2300032: CofferCeiling_23
+    2300034: CofferCeiling_3
+    2300036: CofferCeiling_4
+    2300038: CofferCeiling_5
+    2300040: CofferCeiling_6
+    2300042: CofferCeiling_7
+    2300044: CofferCeiling_8
+    2300046: CofferCeiling_9
+    2300048: RoofBorder
+    3300000: CofferCeiling_0
+    3300002: CofferCeiling_1
+    3300004: CofferCeiling_10
+    3300006: CofferCeiling_11
+    3300008: CofferCeiling_12
+    3300010: CofferCeiling_13
+    3300012: CofferCeiling_14
+    3300014: CofferCeiling_15
+    3300016: CofferCeiling_16
+    3300018: CofferCeiling_17
+    3300020: CofferCeiling_18
+    3300022: CofferCeiling_19
+    3300024: CofferCeiling_2
+    3300026: CofferCeiling_20
+    3300028: CofferCeiling_21
+    3300030: CofferCeiling_22
+    3300032: CofferCeiling_23
+    3300034: CofferCeiling_3
+    3300036: CofferCeiling_4
+    3300038: CofferCeiling_5
+    3300040: CofferCeiling_6
+    3300042: CofferCeiling_7
+    3300044: CofferCeiling_8
+    3300046: CofferCeiling_9
+    3300048: RoofBorder
+    4300000: RoofBorder
+    4300002: CofferCeiling_0
+    4300004: CofferCeiling_1
+    4300006: CofferCeiling_2
+    4300008: CofferCeiling_3
+    4300010: CofferCeiling_4
+    4300012: CofferCeiling_5
+    4300014: CofferCeiling_6
+    4300016: CofferCeiling_7
+    4300018: CofferCeiling_8
+    4300020: CofferCeiling_9
+    4300022: CofferCeiling_10
+    4300024: CofferCeiling_11
+    4300026: CofferCeiling_12
+    4300028: CofferCeiling_13
+    4300030: CofferCeiling_14
+    4300032: CofferCeiling_15
+    4300034: CofferCeiling_16
+    4300036: CofferCeiling_17
+    4300038: CofferCeiling_18
+    4300040: CofferCeiling_19
+    4300042: CofferCeiling_20
+    4300044: CofferCeiling_21
+    4300046: CofferCeiling_22
+    4300048: CofferCeiling_23
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.1
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.10
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.11
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.12
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.13
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.14
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.15
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.16
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.17
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.18
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.19
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.2
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.20
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.21
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.22
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.23
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.24
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.3
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.4
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.5
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.6
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.7
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.8
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.9
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

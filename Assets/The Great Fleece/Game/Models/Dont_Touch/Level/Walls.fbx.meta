@@ -1,0 +1,1129 @@
+fileFormatVersion: 2
+guid: 17f6627599811432d97b1a502b1e6932
+timeCreated: 1509419565
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: CINEMA_4D_Editor
+    100002: Cloner
+    100004: Cloner_1
+    100006: GoldDecor
+    100008: GoldDecor_10
+    100010: GoldDecor_11
+    100012: GoldDecor_12
+    100014: GoldDecor_13
+    100016: GoldDecor_14
+    100018: GoldDecor_15
+    100020: GoldDecor_16
+    100022: GoldDecor_2
+    100024: GoldDecor_3
+    100026: GoldDecor_4
+    100028: GoldDecor_5
+    100030: GoldDecor_6
+    100032: GoldDecor_7
+    100034: GoldDecor_8
+    100036: GoldDecor_9
+    100038: Painting
+    100040: Painting_10
+    100042: Painting_11
+    100044: Painting_12
+    100046: Painting_13
+    100048: Painting_14
+    100050: Painting_15
+    100052: Painting_16
+    100054: Painting_2
+    100056: Painting_3
+    100058: Painting_4
+    100060: Painting_5
+    100062: Painting_6
+    100064: Painting_7
+    100066: Painting_8
+    100068: Painting_9
+    100070: Painting_Rim
+    100072: Painting_Rim_10
+    100074: Painting_Rim_11
+    100076: Painting_Rim_12
+    100078: Painting_Rim_13
+    100080: Painting_Rim_14
+    100082: Painting_Rim_15
+    100084: Painting_Rim_16
+    100086: Painting_Rim_2
+    100088: Painting_Rim_3
+    100090: Painting_Rim_4
+    100092: Painting_Rim_5
+    100094: Painting_Rim_6
+    100096: Painting_Rim_7
+    100098: Painting_Rim_8
+    100100: Painting_Rim_9
+    100102: PaintingWall
+    100104: PaintingWall_1
+    100106: PaintingWall_10
+    100108: PaintingWall_11
+    100110: PaintingWall_11_2
+    100112: PaintingWall_11_3
+    100114: PaintingWall_12
+    100116: PaintingWall_13
+    100118: PaintingWall_14
+    100120: PaintingWall_15
+    100122: PaintingWall_16
+    100124: PaintingWall_1_2
+    100126: PaintingWall_1_3
+    100128: PaintingWall_2
+    100130: PaintingWall_3
+    100132: PaintingWall_3_2
+    100134: PaintingWall_3_3
+    100136: PaintingWall_3_4
+    100138: PaintingWall_4
+    100140: PaintingWall_4_2
+    100142: PaintingWall_5
+    100144: PaintingWall_5_2
+    100146: PaintingWall_5_3
+    100148: PaintingWall_5_4
+    100150: PaintingWall_6
+    100152: PaintingWall_7
+    100154: PaintingWall_7_2
+    100156: PaintingWall_7_3
+    100158: PaintingWall_8
+    100160: PaintingWall_9
+    100162: PaintingWall_9_2
+    100164: PaintingWall_9_3
+    100166: RegWall
+    100168: RegWall_1
+    100170: RegWall_2
+    100172: RegWall_3
+    100174: RegWall_4
+    100176: RegWall_5
+    100178: RegWall_6
+    100180: RegWall_7
+    100182: Shelf
+    100184: Shelf_10
+    100186: Shelf_11
+    100188: Shelf_12
+    100190: Shelf_13
+    100192: Shelf_14
+    100194: Shelf_2
+    100196: Shelf_3
+    100198: Shelf_4
+    100200: Shelf_5
+    100202: Shelf_6
+    100204: Shelf_7
+    100206: Shelf_8
+    100208: Shelf_9
+    100210: Walls
+    100212: //RootNode
+    100214: WindowWall_0
+    100216: WindowWall_1
+    100218: WindowWall_10
+    100220: WindowWall_12
+    100222: WindowWall_1_0
+    100224: WindowWall_1_10
+    100226: WindowWall_1_10_2
+    100228: WindowWall_1_11
+    100230: WindowWall_1_12
+    100232: WindowWall_1_12_2
+    100234: WindowWall_1_13
+    100236: WindowWall_1_14
+    100238: WindowWall_1_2
+    100240: WindowWall_1_2_2
+    100242: WindowWall_1_3
+    100244: WindowWall_1_4
+    100246: WindowWall_1_4_2
+    100248: WindowWall_1_5
+    100250: WindowWall_1_6
+    100252: WindowWall_1_6_2
+    100254: WindowWall_1_7
+    100256: WindowWall_1_8
+    100258: WindowWall_1_8_2
+    100260: WindowWall_1_9
+    100262: WindowWall_2
+    100264: WindowWall_4
+    100266: WindowWall_6
+    100268: WindowWall_8
+    400000: CINEMA_4D_Editor
+    400002: Cloner
+    400004: Cloner_1
+    400006: GoldDecor
+    400008: GoldDecor_10
+    400010: GoldDecor_11
+    400012: GoldDecor_12
+    400014: GoldDecor_13
+    400016: GoldDecor_14
+    400018: GoldDecor_15
+    400020: GoldDecor_16
+    400022: GoldDecor_2
+    400024: GoldDecor_3
+    400026: GoldDecor_4
+    400028: GoldDecor_5
+    400030: GoldDecor_6
+    400032: GoldDecor_7
+    400034: GoldDecor_8
+    400036: GoldDecor_9
+    400038: Painting
+    400040: Painting_10
+    400042: Painting_11
+    400044: Painting_12
+    400046: Painting_13
+    400048: Painting_14
+    400050: Painting_15
+    400052: Painting_16
+    400054: Painting_2
+    400056: Painting_3
+    400058: Painting_4
+    400060: Painting_5
+    400062: Painting_6
+    400064: Painting_7
+    400066: Painting_8
+    400068: Painting_9
+    400070: Painting_Rim
+    400072: Painting_Rim_10
+    400074: Painting_Rim_11
+    400076: Painting_Rim_12
+    400078: Painting_Rim_13
+    400080: Painting_Rim_14
+    400082: Painting_Rim_15
+    400084: Painting_Rim_16
+    400086: Painting_Rim_2
+    400088: Painting_Rim_3
+    400090: Painting_Rim_4
+    400092: Painting_Rim_5
+    400094: Painting_Rim_6
+    400096: Painting_Rim_7
+    400098: Painting_Rim_8
+    400100: Painting_Rim_9
+    400102: PaintingWall
+    400104: PaintingWall_1
+    400106: PaintingWall_10
+    400108: PaintingWall_11
+    400110: PaintingWall_11_2
+    400112: PaintingWall_11_3
+    400114: PaintingWall_12
+    400116: PaintingWall_13
+    400118: PaintingWall_14
+    400120: PaintingWall_15
+    400122: PaintingWall_16
+    400124: PaintingWall_1_2
+    400126: PaintingWall_1_3
+    400128: PaintingWall_2
+    400130: PaintingWall_3
+    400132: PaintingWall_3_2
+    400134: PaintingWall_3_3
+    400136: PaintingWall_3_4
+    400138: PaintingWall_4
+    400140: PaintingWall_4_2
+    400142: PaintingWall_5
+    400144: PaintingWall_5_2
+    400146: PaintingWall_5_3
+    400148: PaintingWall_5_4
+    400150: PaintingWall_6
+    400152: PaintingWall_7
+    400154: PaintingWall_7_2
+    400156: PaintingWall_7_3
+    400158: PaintingWall_8
+    400160: PaintingWall_9
+    400162: PaintingWall_9_2
+    400164: PaintingWall_9_3
+    400166: RegWall
+    400168: RegWall_1
+    400170: RegWall_2
+    400172: RegWall_3
+    400174: RegWall_4
+    400176: RegWall_5
+    400178: RegWall_6
+    400180: RegWall_7
+    400182: Shelf
+    400184: Shelf_10
+    400186: Shelf_11
+    400188: Shelf_12
+    400190: Shelf_13
+    400192: Shelf_14
+    400194: Shelf_2
+    400196: Shelf_3
+    400198: Shelf_4
+    400200: Shelf_5
+    400202: Shelf_6
+    400204: Shelf_7
+    400206: Shelf_8
+    400208: Shelf_9
+    400210: Walls
+    400212: //RootNode
+    400214: WindowWall_0
+    400216: WindowWall_1
+    400218: WindowWall_10
+    400220: WindowWall_12
+    400222: WindowWall_1_0
+    400224: WindowWall_1_10
+    400226: WindowWall_1_10_2
+    400228: WindowWall_1_11
+    400230: WindowWall_1_12
+    400232: WindowWall_1_12_2
+    400234: WindowWall_1_13
+    400236: WindowWall_1_14
+    400238: WindowWall_1_2
+    400240: WindowWall_1_2_2
+    400242: WindowWall_1_3
+    400244: WindowWall_1_4
+    400246: WindowWall_1_4_2
+    400248: WindowWall_1_5
+    400250: WindowWall_1_6
+    400252: WindowWall_1_6_2
+    400254: WindowWall_1_7
+    400256: WindowWall_1_8
+    400258: WindowWall_1_8_2
+    400260: WindowWall_1_9
+    400262: WindowWall_2
+    400264: WindowWall_4
+    400266: WindowWall_6
+    400268: WindowWall_8
+    2000000: CINEMA_4D_Editor
+    2300000: GoldDecor
+    2300002: GoldDecor_10
+    2300004: GoldDecor_11
+    2300006: GoldDecor_12
+    2300008: GoldDecor_13
+    2300010: GoldDecor_14
+    2300012: GoldDecor_15
+    2300014: GoldDecor_16
+    2300016: GoldDecor_2
+    2300018: GoldDecor_3
+    2300020: GoldDecor_4
+    2300022: GoldDecor_5
+    2300024: GoldDecor_6
+    2300026: GoldDecor_7
+    2300028: GoldDecor_8
+    2300030: GoldDecor_9
+    2300032: Painting
+    2300034: Painting_10
+    2300036: Painting_11
+    2300038: Painting_12
+    2300040: Painting_13
+    2300042: Painting_14
+    2300044: Painting_15
+    2300046: Painting_16
+    2300048: Painting_2
+    2300050: Painting_3
+    2300052: Painting_4
+    2300054: Painting_5
+    2300056: Painting_6
+    2300058: Painting_7
+    2300060: Painting_8
+    2300062: Painting_9
+    2300064: Painting_Rim
+    2300066: Painting_Rim_10
+    2300068: Painting_Rim_11
+    2300070: Painting_Rim_12
+    2300072: Painting_Rim_13
+    2300074: Painting_Rim_14
+    2300076: Painting_Rim_15
+    2300078: Painting_Rim_16
+    2300080: Painting_Rim_2
+    2300082: Painting_Rim_3
+    2300084: Painting_Rim_4
+    2300086: Painting_Rim_5
+    2300088: Painting_Rim_6
+    2300090: Painting_Rim_7
+    2300092: Painting_Rim_8
+    2300094: Painting_Rim_9
+    2300096: PaintingWall
+    2300098: PaintingWall_10
+    2300100: PaintingWall_11_2
+    2300102: PaintingWall_12
+    2300104: PaintingWall_13
+    2300106: PaintingWall_14
+    2300108: PaintingWall_15
+    2300110: PaintingWall_16
+    2300112: PaintingWall_2
+    2300114: PaintingWall_3_2
+    2300116: PaintingWall_4_2
+    2300118: PaintingWall_5_2
+    2300120: PaintingWall_6
+    2300122: PaintingWall_7
+    2300124: PaintingWall_8
+    2300126: PaintingWall_9_2
+    2300128: RegWall
+    2300130: RegWall_1
+    2300132: RegWall_2
+    2300134: RegWall_3
+    2300136: RegWall_4
+    2300138: RegWall_5
+    2300140: RegWall_6
+    2300142: RegWall_7
+    2300144: Shelf
+    2300146: Shelf_10
+    2300148: Shelf_11
+    2300150: Shelf_12
+    2300152: Shelf_13
+    2300154: Shelf_14
+    2300156: Shelf_2
+    2300158: Shelf_3
+    2300160: Shelf_4
+    2300162: Shelf_5
+    2300164: Shelf_6
+    2300166: Shelf_7
+    2300168: Shelf_8
+    2300170: Shelf_9
+    2300172: WindowWall_1
+    2300174: WindowWall_1_10
+    2300176: WindowWall_1_11
+    2300178: WindowWall_1_12
+    2300180: WindowWall_1_13
+    2300182: WindowWall_1_14
+    2300184: WindowWall_1_2
+    2300186: WindowWall_1_3
+    2300188: WindowWall_1_4
+    2300190: WindowWall_1_5
+    2300192: WindowWall_1_6
+    2300194: WindowWall_1_7
+    2300196: WindowWall_1_8
+    2300198: WindowWall_1_9
+    3300000: GoldDecor
+    3300002: GoldDecor_10
+    3300004: GoldDecor_11
+    3300006: GoldDecor_12
+    3300008: GoldDecor_13
+    3300010: GoldDecor_14
+    3300012: GoldDecor_15
+    3300014: GoldDecor_16
+    3300016: GoldDecor_2
+    3300018: GoldDecor_3
+    3300020: GoldDecor_4
+    3300022: GoldDecor_5
+    3300024: GoldDecor_6
+    3300026: GoldDecor_7
+    3300028: GoldDecor_8
+    3300030: GoldDecor_9
+    3300032: Painting
+    3300034: Painting_10
+    3300036: Painting_11
+    3300038: Painting_12
+    3300040: Painting_13
+    3300042: Painting_14
+    3300044: Painting_15
+    3300046: Painting_16
+    3300048: Painting_2
+    3300050: Painting_3
+    3300052: Painting_4
+    3300054: Painting_5
+    3300056: Painting_6
+    3300058: Painting_7
+    3300060: Painting_8
+    3300062: Painting_9
+    3300064: Painting_Rim
+    3300066: Painting_Rim_10
+    3300068: Painting_Rim_11
+    3300070: Painting_Rim_12
+    3300072: Painting_Rim_13
+    3300074: Painting_Rim_14
+    3300076: Painting_Rim_15
+    3300078: Painting_Rim_16
+    3300080: Painting_Rim_2
+    3300082: Painting_Rim_3
+    3300084: Painting_Rim_4
+    3300086: Painting_Rim_5
+    3300088: Painting_Rim_6
+    3300090: Painting_Rim_7
+    3300092: Painting_Rim_8
+    3300094: Painting_Rim_9
+    3300096: PaintingWall
+    3300098: PaintingWall_10
+    3300100: PaintingWall_11_2
+    3300102: PaintingWall_12
+    3300104: PaintingWall_13
+    3300106: PaintingWall_14
+    3300108: PaintingWall_15
+    3300110: PaintingWall_16
+    3300112: PaintingWall_2
+    3300114: PaintingWall_3_2
+    3300116: PaintingWall_4_2
+    3300118: PaintingWall_5_2
+    3300120: PaintingWall_6
+    3300122: PaintingWall_7
+    3300124: PaintingWall_8
+    3300126: PaintingWall_9_2
+    3300128: RegWall
+    3300130: RegWall_1
+    3300132: RegWall_2
+    3300134: RegWall_3
+    3300136: RegWall_4
+    3300138: RegWall_5
+    3300140: RegWall_6
+    3300142: RegWall_7
+    3300144: Shelf
+    3300146: Shelf_10
+    3300148: Shelf_11
+    3300150: Shelf_12
+    3300152: Shelf_13
+    3300154: Shelf_14
+    3300156: Shelf_2
+    3300158: Shelf_3
+    3300160: Shelf_4
+    3300162: Shelf_5
+    3300164: Shelf_6
+    3300166: Shelf_7
+    3300168: Shelf_8
+    3300170: Shelf_9
+    3300172: WindowWall_1
+    3300174: WindowWall_1_10
+    3300176: WindowWall_1_11
+    3300178: WindowWall_1_12
+    3300180: WindowWall_1_13
+    3300182: WindowWall_1_14
+    3300184: WindowWall_1_2
+    3300186: WindowWall_1_3
+    3300188: WindowWall_1_4
+    3300190: WindowWall_1_5
+    3300192: WindowWall_1_6
+    3300194: WindowWall_1_7
+    3300196: WindowWall_1_8
+    3300198: WindowWall_1_9
+    4300000: RegWall_3
+    4300002: GoldDecor
+    4300004: PaintingWall
+    4300006: Painting
+    4300008: Painting_Rim
+    4300010: GoldDecor_2
+    4300012: PaintingWall_2
+    4300014: Painting_2
+    4300016: Painting_Rim_2
+    4300018: RegWall_2
+    4300020: RegWall_1
+    4300022: RegWall
+    4300024: GoldDecor_3
+    4300026: PaintingWall_3_2
+    4300028: Painting_3
+    4300030: Painting_Rim_3
+    4300032: GoldDecor_4
+    4300034: PaintingWall_4_2
+    4300036: Painting_4
+    4300038: Painting_Rim_4
+    4300040: RegWall_4
+    4300042: RegWall_5
+    4300044: RegWall_6
+    4300046: RegWall_7
+    4300048: Shelf
+    4300050: WindowWall_1
+    4300052: GoldDecor_5
+    4300054: PaintingWall_5_2
+    4300056: Painting_5
+    4300058: Painting_Rim_5
+    4300060: Shelf_2
+    4300062: WindowWall_1_2
+    4300064: GoldDecor_6
+    4300066: PaintingWall_6
+    4300068: Painting_6
+    4300070: Painting_Rim_6
+    4300072: Shelf_3
+    4300074: WindowWall_1_3
+    4300076: GoldDecor_7
+    4300078: PaintingWall_7
+    4300080: Painting_7
+    4300082: Painting_Rim_7
+    4300084: Shelf_4
+    4300086: WindowWall_1_4
+    4300088: GoldDecor_8
+    4300090: PaintingWall_8
+    4300092: Painting_8
+    4300094: Painting_Rim_8
+    4300096: Shelf_5
+    4300098: WindowWall_1_5
+    4300100: GoldDecor_9
+    4300102: PaintingWall_9_2
+    4300104: Painting_9
+    4300106: Painting_Rim_9
+    4300108: Shelf_6
+    4300110: WindowWall_1_6
+    4300112: GoldDecor_10
+    4300114: PaintingWall_10
+    4300116: Painting_10
+    4300118: Painting_Rim_10
+    4300120: Shelf_7
+    4300122: WindowWall_1_7
+    4300124: Shelf_8
+    4300126: WindowWall_1_8
+    4300128: GoldDecor_11
+    4300130: PaintingWall_11_2
+    4300132: Painting_11
+    4300134: Painting_Rim_11
+    4300136: Shelf_9
+    4300138: WindowWall_1_9
+    4300140: GoldDecor_12
+    4300142: PaintingWall_12
+    4300144: Painting_12
+    4300146: Painting_Rim_12
+    4300148: Shelf_10
+    4300150: WindowWall_1_10
+    4300152: GoldDecor_13
+    4300154: PaintingWall_13
+    4300156: Painting_13
+    4300158: Painting_Rim_13
+    4300160: Shelf_11
+    4300162: WindowWall_1_11
+    4300164: GoldDecor_14
+    4300166: PaintingWall_14
+    4300168: Painting_14
+    4300170: Painting_Rim_14
+    4300172: Shelf_12
+    4300174: WindowWall_1_12
+    4300176: GoldDecor_15
+    4300178: PaintingWall_15
+    4300180: Painting_15
+    4300182: Painting_Rim_15
+    4300184: Shelf_13
+    4300186: WindowWall_1_13
+    4300188: GoldDecor_16
+    4300190: PaintingWall_16
+    4300192: Painting_16
+    4300194: Painting_Rim_16
+    4300196: Shelf_14
+    4300198: WindowWall_1_14
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.1
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.10
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.11
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.12
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.13
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.14
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.15
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.16
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.17
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.18
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.19
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.2
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.20
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.21
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.22
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.23
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.24
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.25
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.26
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.27
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.28
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.29
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.3
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.30
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.31
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.32
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.33
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.34
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.35
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.36
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.37
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.4
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.5
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.6
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.7
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.8
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackMarbleColumn.9
+    second: {fileID: 2100000, guid: 9319eed92542742fd9cf1bce681f262d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: 170ea5691f0534f83a5c5ba32b8fc297, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal - Gold
+    second: {fileID: 2100000, guid: bc2585d9715ba4f0e9a01363471462ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetalRail
+    second: {fileID: 2100000, guid: 80155139657174aa0a6e29a1254a44b0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 46dd6dd5c28ffb74992efc07ae2e7510, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.1
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.10
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.11
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.12
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.13
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.14
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.15
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.16
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.17
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.18
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.19
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.2
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.20
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.21
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.22
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.23
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.24
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.25
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.26
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.27
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.28
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.29
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.3
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.30
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.31
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.32
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.33
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.34
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.35
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.36
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.37
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.38
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.39
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.4
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.40
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.41
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.42
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.43
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.44
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.45
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.46
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.47
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.48
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.49
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.5
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.50
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.51
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.6
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.7
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.8
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.9
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,178 @@
+fileFormatVersion: 2
+guid: 2089614417b2f4f98b6472a5873227e5
+timeCreated: 1509420306
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: CINEMA_4D_Editor
+    100002: Platform
+    100004: Platform_1
+    100006: Platform_2
+    100008: Platform_3
+    100010: Roof
+    100012: //RootNode
+    100014: Shelf
+    100016: Shelf_1
+    400000: CINEMA_4D_Editor
+    400002: Platform
+    400004: Platform_1
+    400006: Platform_2
+    400008: Platform_3
+    400010: Roof
+    400012: //RootNode
+    400014: Shelf
+    400016: Shelf_1
+    2000000: CINEMA_4D_Editor
+    2300000: Platform
+    2300002: Platform_1
+    2300004: Platform_2
+    2300006: Platform_3
+    2300008: Roof
+    2300010: Shelf
+    2300012: Shelf_1
+    3300000: Platform
+    3300002: Platform_1
+    3300004: Platform_2
+    3300006: Platform_3
+    3300008: Roof
+    3300010: Shelf
+    3300012: Shelf_1
+    4300000: Roof
+    4300002: Platform_3
+    4300004: Platform_2
+    4300006: Platform_1
+    4300008: Platform
+    4300010: Shelf_1
+    4300012: Shelf
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GreyCarpet
+    second: {fileID: 2100000, guid: 97da628440fcc4543882395fb8f18221, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GreyCarpet.1
+    second: {fileID: 2100000, guid: 97da628440fcc4543882395fb8f18221, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GreyCarpet.2
+    second: {fileID: 2100000, guid: 97da628440fcc4543882395fb8f18221, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 46dd6dd5c28ffb74992efc07ae2e7510, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteMarbleFloor
+    second: {fileID: 2100000, guid: b70307282c1c846d396667f4f9fbba6e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.1
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.2
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.3
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall.4
+    second: {fileID: 2100000, guid: 6e089a73885af482eb3b6de126353c40, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

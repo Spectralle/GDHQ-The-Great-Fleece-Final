@@ -1,0 +1,153 @@
+fileFormatVersion: 2
+guid: ac6b0d3e3172b4244a7c2f7ed53c4fd5
+timeCreated: 1509471692
+licenseType: Store
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Base
+    100002: CINEMA_4D_Editor
+    100004: Crown
+    100006: //RootNode
+    100008: Ring
+    100010: Statue1
+    100012: Statue2
+    100014: Statue3
+    100016: Statue4
+    100018: Vase1
+    100020: Vase2
+    100022: Vase3
+    100024: Vase4
+    100026: Vase6
+    100028: Wristband
+    400000: Base
+    400002: CINEMA_4D_Editor
+    400004: Crown
+    400006: //RootNode
+    400008: Ring
+    400010: Statue1
+    400012: Statue2
+    400014: Statue3
+    400016: Statue4
+    400018: Vase1
+    400020: Vase2
+    400022: Vase3
+    400024: Vase4
+    400026: Vase6
+    400028: Wristband
+    2000000: CINEMA_4D_Editor
+    2300000: Base
+    2300002: Crown
+    2300004: Ring
+    2300006: Statue1
+    2300008: Statue2
+    2300010: Statue3
+    2300012: Statue4
+    2300014: Vase1
+    2300016: Vase2
+    2300018: Vase3
+    2300020: Vase4
+    2300022: Vase6
+    2300024: Wristband
+    3300000: Base
+    3300002: Crown
+    3300004: Ring
+    3300006: Statue1
+    3300008: Statue2
+    3300010: Statue3
+    3300012: Statue4
+    3300014: Vase1
+    3300016: Vase2
+    3300018: Vase3
+    3300020: Vase4
+    3300022: Vase6
+    3300024: Wristband
+    4300000: Base
+    4300002: Crown
+    4300004: Ring
+    4300006: Statue1
+    4300008: Statue2
+    4300010: Statue3
+    4300012: Statue4
+    4300014: Wristband
+    4300016: Vase1
+    4300018: Vase2
+    4300020: Vase6
+    4300022: Vase4
+    4300024: Vase3
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
