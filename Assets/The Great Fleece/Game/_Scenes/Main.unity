@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 2.93
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 9bfe2843c91e84cfb8cb91c4eae22095, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: b999524ccf5caae4591640557115bc9b, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -1813,6 +1813,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 540719833}
     m_Modifications:
+    - target: {fileID: 1202696559143866, guid: 8a9dec7327de344b3b25015a684c0c36, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1213102512743572, guid: 8a9dec7327de344b3b25015a684c0c36, type: 3}
       propertyPath: m_Name
       value: Chandelier V2 (3)
@@ -8267,6 +8271,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 23741571358735310, guid: b246ea7f54de74cb696b16b5e7abee82, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 738b92b968dd54f9a9f1590f6e6845de, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b246ea7f54de74cb696b16b5e7abee82, type: 3}
 --- !u!4 &255821359 stripped
@@ -9612,6 +9620,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 540719833}
     m_Modifications:
+    - target: {fileID: 1202696559143866, guid: 8a9dec7327de344b3b25015a684c0c36, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4142744574336076, guid: 8a9dec7327de344b3b25015a684c0c36, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -14108,6 +14120,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 540719833}
     m_Modifications:
+    - target: {fileID: 1202696559143866, guid: 8a9dec7327de344b3b25015a684c0c36, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1213102512743572, guid: 8a9dec7327de344b3b25015a684c0c36, type: 3}
       propertyPath: m_Name
       value: Chandelier V2 (1)
@@ -15079,8 +15095,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 845114851}
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 2087092806}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 18.6, y: 129.194, z: -0.005}
 --- !u!1001 &719017866
 PrefabInstance:
@@ -19034,6 +19050,38 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4178501293864144, guid: 28e5f09782bb74f478387da2ccf0bd47, type: 3}
   m_PrefabInstance: {fileID: 907822556}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &908046406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 908046407}
+  m_Layer: 0
+  m_Name: Sleeping Guard Cutscene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &908046407
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908046406}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2097661148}
+  - {fileID: 2087092806}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &909597561
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19246,7 +19294,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &917020357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19289,13 +19337,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 917020356}
-  m_LocalRotation: {x: 0.10372313, y: -0.8793281, z: 0.22387639, w: 0.40731192}
+  m_LocalRotation: {x: 0.10372314, y: -0.8793281, z: 0.2238764, w: 0.40731192}
   m_LocalPosition: {x: 2.0618849, y: 2.094613, z: -106.477295}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1046314399}
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 2087092806}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &921112975
 PrefabInstance:
@@ -20628,6 +20676,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 540719833}
     m_Modifications:
+    - target: {fileID: 1202696559143866, guid: 8a9dec7327de344b3b25015a684c0c36, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1213102512743572, guid: 8a9dec7327de344b3b25015a684c0c36, type: 3}
       propertyPath: m_Name
       value: Chandelier V2 (4)
@@ -23807,6 +23859,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 540719833}
     m_Modifications:
+    - target: {fileID: 1202696559143866, guid: 8a9dec7327de344b3b25015a684c0c36, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1213102512743572, guid: 8a9dec7327de344b3b25015a684c0c36, type: 3}
       propertyPath: m_Name
       value: Chandelier V2 (2)
@@ -39661,8 +39717,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043896029}
-  m_LocalRotation: {x: -0.08039828, y: -0.8687866, z: 0.15032466, w: -0.46491775}
-  m_LocalPosition: {x: -4.631201, y: 2.441842, z: -106.42833}
+  m_LocalRotation: {x: 0.10372314, y: -0.8793281, z: 0.2238764, w: 0.40731192}
+  m_LocalPosition: {x: 2.0618849, y: 2.094613, z: -106.477295}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -40431,20 +40487,56 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 33.536003, y: -73.77901, z: 40.444}
+--- !u!1 &2087092805
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2087092806}
+  m_Layer: 0
+  m_Name: CM Virtual Cameras
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2087092806
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087092805}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 714406858}
+  - {fileID: 917020358}
+  m_Father: {fileID: 908046407}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2097661147
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 908046407}
     m_Modifications:
     - target: {fileID: 1347687833628048, guid: 49be4103b035b448cb277ad3ac4b48f7, type: 3}
       propertyPath: m_Name
       value: Sleeping_Guard_Cutscene_Actors
       objectReference: {fileID: 0}
+    - target: {fileID: 1347687833628048, guid: 49be4103b035b448cb277ad3ac4b48f7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4328310163252698, guid: 49be4103b035b448cb277ad3ac4b48f7, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4328310163252698, guid: 49be4103b035b448cb277ad3ac4b48f7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -40488,6 +40580,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49be4103b035b448cb277ad3ac4b48f7, type: 3}
+--- !u!4 &2097661148 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4328310163252698, guid: 49be4103b035b448cb277ad3ac4b48f7, type: 3}
+  m_PrefabInstance: {fileID: 2097661147}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2100339662
 PrefabInstance:
   m_ObjectHideFlags: 0
