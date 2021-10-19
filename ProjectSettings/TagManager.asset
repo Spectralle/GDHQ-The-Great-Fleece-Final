@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Guard1
+  - Camera Change Trigger
   layers:
   - Default
   - TransparentFX
