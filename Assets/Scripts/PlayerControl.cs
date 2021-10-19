@@ -10,47 +10,47 @@ namespace TGF
     {
         private Camera _cameraTransform;
         private Vector3 _worldDestination;
-        private NavMeshAgent agent;
-        private Animator anim;
+        private NavMeshAgent _agent;
+        private Animator _anim;
         private enum AnimState
         {
             Idle,
             Walking,
             Throwing
         }
-        private AnimState animState;
+        private AnimState _animState;
 
 
         private void Start()
         {
             _cameraTransform = Camera.main;
-            agent = GetComponent<NavMeshAgent>();
-            anim = GetComponent<Animator>();
+            _agent = GetComponent<NavMeshAgent>();
+            _anim = GetComponent<Animator>();
         }
 
         private void Update()
         {
-            if (animState != AnimState.Throwing)
+            if (_animState != AnimState.Throwing)
             {
                 #region State checks
-                if (agent.velocity != Vector3.zero)
+                if (_agent.velocity != Vector3.zero)
                 {
-                    animState = AnimState.Walking;
-                    anim.SetBool("Walking", true);
+                    _animState = AnimState.Walking;
+                    _anim.SetBool("Walking", true);
                 }
                 else
                 {
-                    animState = AnimState.Idle;
-                    anim.SetBool("Walking", false);
+                    _animState = AnimState.Idle;
+                    _anim.SetBool("Walking", false);
                 }
                 #endregion
 
                 #region Player Input
-                if (Input.GetMouseButtonDown(0))
+                if (Input.GetButtonDown("Move"))
                     SetDestinationToClickPosition();
 
-                if (Input.GetMouseButtonDown(1))
-                    StartCoroutine(ThrowCoin());
+                if (Input.GetButtonDown("Toss Coin"))
+                    StartCoroutine(TossCoin());
                 #endregion
             }
         }
@@ -60,24 +60,24 @@ namespace TGF
             if (Physics.Raycast(_cameraTransform.ScreenPointToRay(Input.mousePosition), out RaycastHit hit))
             {
                 _worldDestination = hit.point;
-                agent.SetDestination(_worldDestination);
+                _agent.SetDestination(_worldDestination);
             }
         }
 
-        private IEnumerator ThrowCoin()
+        private IEnumerator TossCoin()
         {
-            AnimState currentState = animState;
-            animState = AnimState.Throwing;
-            agent.isStopped = true;
+            AnimState currentState = _animState;
+            _animState = AnimState.Throwing;
+            _agent.isStopped = true;
 
             if (Physics.Raycast(_cameraTransform.ScreenPointToRay(Input.mousePosition), out RaycastHit hit))
                 transform.LookAt(hit.point);
-            anim.SetTrigger("Throw coin");
+            _anim.SetTrigger("Throw coin");
 
             yield return new WaitForSeconds(2f);
 
-            animState = currentState;
-            agent.isStopped = false;
+            _animState = currentState;
+            _agent.isStopped = false;
         }
     }
 }
