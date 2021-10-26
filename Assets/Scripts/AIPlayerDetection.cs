@@ -10,13 +10,13 @@ namespace TGF
         [SerializeField] private GameObject _captureCutscene;
 
         private Animator _anim;
-        private AIWaypointPatroller _ai;
+        private AIWaypointPatroller _aiwp;
 
 
         private void Awake()
         {
             TryGetComponent(out _anim);
-            TryGetComponent(out _ai);
+            TryGetComponent(out _aiwp);
         }
 
         public void PlayerEnteredDetection_LOS()
@@ -43,7 +43,7 @@ namespace TGF
 
         private void PlayerEnteredDetection()
         {
-            _ai?.DisablePathfinding();
+            _aiwp?.DisablePathfinding();
             _anim?.SetBool("CanSeePlayer", true);
             if (_captureCutscene)
                 _captureCutscene.SetActive(true);
