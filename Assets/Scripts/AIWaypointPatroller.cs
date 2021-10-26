@@ -10,6 +10,7 @@ namespace TGF
     {
         [Header("Path Settings:")]
         [SerializeField] private bool _isPathfinding = true;
+        public bool IsPathfinding => _isPathfinding;
         public void EnablePathfinding() => _isPathfinding = true;
         public void DisablePathfinding() => _isPathfinding = false;
         [SerializeField, Range(0f, 50f)] private float _waitAtWaypoint = 5f;
@@ -98,11 +99,11 @@ namespace TGF
                     }
                 }
             }
-            else
-            {
-                if (_agent.destination != transform.position)
-                    _agent.SetDestination(transform.position);
-            }
+            //else
+            //{
+            //    if (_agent.destination != transform.position)
+            //        _agent.SetDestination(transform.position);
+            //}
         }
 
         private void SetDestinationAndStartWalking()

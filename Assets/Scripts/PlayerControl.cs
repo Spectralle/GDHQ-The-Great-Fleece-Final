@@ -14,6 +14,8 @@ namespace TGF
         [SerializeField, Min(0)] private int _coinCount = 1;
         [SerializeField] private LayerMask _coinArea;
         [SerializeField] private GameObject _coinPrefab;
+        [SerializeField] private float _coinDistractRange = 5f;
+        [SerializeField] private LayerMask _distractTargets;
         [SerializeField] private LineRenderer _coinTossLineRenderer;
         [SerializeField] private float _coinVelocity;
         [SerializeField] private float _coinAngle;
@@ -103,6 +105,15 @@ namespace TGF
             );
             coin.GetComponent<AudioSource>().Play();
             Destroy(coin, 5f);
+
+            Collider[] nearbyGuards = Physics.OverlapSphere(coin.transform.position, _coinDistractRange, _distractTargets);
+            Debug.Log("Distracted " + nearbyGuards.Length + " guards.");
+            foreach (Collider guard in nearbyGuards)
+            {
+                guard.transform.parent.TryGetComponent(out AIDistractionReciever aidr);
+                aidr?.Distract(coin.transform.position);
+            }
+
 
             yield return new WaitForSeconds(0.5f);
 
