@@ -114,7 +114,6 @@ namespace TGF
                 aidr?.Distract(coin.transform.position);
             }
 
-
             yield return new WaitForSeconds(0.5f);
 
             _animState = currentState;
