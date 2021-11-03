@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 708257245959204841}
   - component: {fileID: -835158842488473467}
   - component: {fileID: 453738194183376436}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -241,7 +241,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8435650908594352325}
   - component: {fileID: 3866596163677338675}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Glint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

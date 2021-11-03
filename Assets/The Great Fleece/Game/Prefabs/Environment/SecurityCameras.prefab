@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4292925433437978}
+  - component: {fileID: 950032271966247401}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -32,6 +33,18 @@ Transform:
   m_Father: {fileID: 4338286230955942}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &950032271966247401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267076819140348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52ef1abdde741c24cba0c7326bbdd240, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1330035826601220
 GameObject:
   m_ObjectHideFlags: 0
@@ -96,6 +109,7 @@ GameObject:
   - component: {fileID: 33754956938923634}
   - component: {fileID: 23355972756435174}
   - component: {fileID: 64713049811544802}
+  - component: {fileID: 8254826393038161332}
   m_Layer: 0
   m_Name: CameraCone
   m_TagString: Untagged
@@ -180,6 +194,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: a870acd334b5f41b1811f9d6408b1e6e, type: 3}
+--- !u!114 &8254826393038161332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440323925674856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c951fbd5451565c4b9d341c4beeac873, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _events: []
 --- !u!1 &1475526318514572
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,6 +218,7 @@ GameObject:
   - component: {fileID: 4534762507756726}
   - component: {fileID: 33585460511744492}
   - component: {fileID: 23191162395423430}
+  - component: {fileID: 4081819219805760262}
   m_Layer: 0
   m_Name: Camera_1
   m_TagString: Untagged
@@ -205,14 +233,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1475526318514572}
-  m_LocalRotation: {x: 0, y: 0.5285494, z: 0, w: 0.8489026}
+  m_LocalRotation: {x: 0, y: 0.5, z: 0, w: 0.8660254}
   m_LocalPosition: {x: -0.88474804, y: 0.28149527, z: -0.15514737}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4280613061662722}
   m_Father: {fileID: 4292925433437978}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 63.815, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 60, z: 0}
 --- !u!33 &33585460511744492
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -262,6 +290,25 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &4081819219805760262
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475526318514572}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1f43ae29d2af14d44875a1e6986412e2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1524685910503724
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,6 +399,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4833509350456938}
+  - component: {fileID: 2132827584534835627}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -375,6 +423,18 @@ Transform:
   m_Father: {fileID: 4338286230955942}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2132827584534835627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533767462133586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52ef1abdde741c24cba0c7326bbdd240, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1545145990394546
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,6 +528,7 @@ GameObject:
   - component: {fileID: 33490406701191324}
   - component: {fileID: 23762052703765058}
   - component: {fileID: 64680296577853544}
+  - component: {fileID: 7391990508250986760}
   m_Layer: 0
   m_Name: CameraCone
   m_TagString: Untagged
@@ -552,6 +613,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: a870acd334b5f41b1811f9d6408b1e6e, type: 3}
+--- !u!114 &7391990508250986760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752938497680826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c951fbd5451565c4b9d341c4beeac873, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _events: []
 --- !u!1 &1807756980753354
 GameObject:
   m_ObjectHideFlags: 0
@@ -563,6 +637,7 @@ GameObject:
   - component: {fileID: 4157417823824284}
   - component: {fileID: 33094192377392086}
   - component: {fileID: 23696360487886260}
+  - component: {fileID: 2052494924810276378}
   m_Layer: 0
   m_Name: Camera_1
   m_TagString: Untagged
@@ -577,14 +652,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807756980753354}
-  m_LocalRotation: {x: 0, y: 0.5285494, z: 0, w: 0.8489026}
+  m_LocalRotation: {x: 0, y: 0.5, z: 0, w: 0.8660254}
   m_LocalPosition: {x: -0.88474804, y: 0.28149527, z: -0.15514737}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4109222266805248}
   m_Father: {fileID: 4833509350456938}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 63.815, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 60, z: 0}
 --- !u!33 &33094192377392086
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -634,3 +709,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &2052494924810276378
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807756980753354}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1f43ae29d2af14d44875a1e6986412e2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

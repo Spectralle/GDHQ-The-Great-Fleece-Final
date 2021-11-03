@@ -6,7 +6,7 @@ namespace TGF
     [RequireComponent(typeof(Collider))]
     public class AudioTrigger : MonoBehaviour
     {
-        [SerializeField] private Camera _camera;
+        [SerializeField] private AudioSource _camera;
         [SerializeField] private List<string> _activationTags;
         [Space]
         [SerializeField] private AudioClip[] _playOnEnter;
@@ -23,7 +23,7 @@ namespace TGF
             {
                 foreach (AudioClip clip in clipList)
                 {
-                    AudioSource.PlayClipAtPoint(clip, _camera.transform.position);
+                    _camera.PlayOneShot(clip);
                     Debug.Log("Audio clip (" + clip.name + ") is now playing for " + clip.length + " seconds!");
                 }
             }
