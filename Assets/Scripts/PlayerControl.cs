@@ -21,7 +21,7 @@ namespace TGF
         [SerializeField] private LayerMask _validCoinArea;
         [SerializeField] private LayerMask _distractTargets;
         [SerializeField] private bool _showArcInGame;
-
+        
         private Camera _cameraTransform;
         private Vector3 _worldDestination;
         private NavMeshAgent _agent;
@@ -35,6 +35,7 @@ namespace TGF
         private AnimState _animState;
         private float _gravity;
         private int _coinsTossedAlready = 0;
+        Vector3 target;
 
         [System.Serializable]
         public struct ArcData
@@ -97,26 +98,15 @@ namespace TGF
 
         private IEnumerator TossCoin()
         {
-            if (Physics.Raycast(_cameraTransform.ScreenPointToRay(Input.mousePosition), out RaycastHit hit, _validCoinArea))
+            if (Physics.Raycast(_cameraTransform.ScreenPointToRay(Input.mousePosition), out RaycastHit hit, 30, _validCoinArea))
             {
-                transform.LookAt(hit.point);
-                _coinsTossedAlready++;
-                AnimState currentState = _animState;
-                _animState = AnimState.Throwing;
-                _agent.isStopped = true;
-                _anim.Play("Throw");
+                PrepareToTossCoin(hit.point, out AnimState currentState);
 
                 yield return new WaitForSeconds(0.8f);
 
-                ArcData arc = CalculateCoinArcData(_coinOrigin.position, hit.point);
+                ArcData arc = CalculateCoinArcData(_coinOrigin.position, hit.point, out float timeTillReached);
 
-                GameObject coin = Instantiate(
-                    _coinPrefab,
-                    _coinOrigin.position,
-                    Quaternion.Euler(Random.Range(-80, 80), Random.Range(0, 360), 0)
-                );
-                Rigidbody rb = coin.GetComponent<Rigidbody>();
-                rb.velocity = arc.initialVelocity;
+                SpawnAndTossCoin(arc, out GameObject coin, out Rigidbody rb);
                 if (_showArcInGame)
                     DisplayArc(arc);
 
@@ -125,32 +115,17 @@ namespace TGF
                 _animState = currentState;
                 _agent.isStopped = false;
 
-                yield return new WaitForSeconds(0.43f);
+                yield return new WaitForSeconds(timeTillReached - 1.2f);
 
-                if (_showArcInGame)
-                    _coinTossLineRenderer.positionCount = 0;
-                rb.velocity = Vector3.zero;
-                coin.transform.rotation = Quaternion.identity;
-                coin.GetComponent<AudioSource>().Play();
-                Destroy(coin, 5f);
-
-                Collider[] nearbyGuards = Physics.OverlapSphere(
-                    coin.transform.position,
-                    _coinDistractRange,
-                    _distractTargets
-                );
-                foreach (Collider guard in nearbyGuards)
-                {
-                    guard.transform.parent.TryGetComponent(out AIDistractionReciever aidr);
-                    aidr?.Distract(coin.transform.position);
-                }
+                CoinHitsGround(coin.transform, rb, hit.point);
+                DistractGuards(coin.transform);
             }
         }
 
-        private ArcData CalculateCoinArcData(Vector3 origin, Vector3 target)
+        private ArcData CalculateCoinArcData(Vector3 origin, Vector3 target, out float time)
         {
             Vector3 displacement = target - origin;
-            float time = Mathf.Sqrt(-2 * _arcHeight / _gravity) + Mathf.Sqrt(2 * (displacement.y - _arcHeight) / _gravity);
+            time = Mathf.Sqrt(-2 * _arcHeight / _gravity) + Mathf.Sqrt(2 * (displacement.y - _arcHeight) / _gravity);
             Vector3 initialVelocity = displacement / time;
             initialVelocity.y = Mathf.Sqrt(-2 * _gravity * _arcHeight) * -Mathf.Sign(_gravity);
 
@@ -167,10 +142,60 @@ namespace TGF
             return new ArcData(initialVelocity, arcPoints);
         }
 
+        private void PrepareToTossCoin(Vector3 hitPoint, out AnimState currentState)
+        {
+            transform.LookAt(hitPoint);
+            _coinsTossedAlready++;
+            currentState = _animState;
+            _animState = AnimState.Throwing;
+            _agent.isStopped = true;
+            _anim.Play("Throw");
+        }
+
+        private void SpawnAndTossCoin(ArcData arc, out GameObject coin, out Rigidbody rb)
+        {
+            coin = Instantiate(
+                _coinPrefab,
+                _coinOrigin.position,
+                Quaternion.Euler(Random.Range(-80, 80), Random.Range(0, 360), 0)
+            );
+            rb = coin.GetComponent<Rigidbody>();
+            rb.velocity = arc.initialVelocity;
+        }
+
         private void DisplayArc(ArcData arc)
         {
             _coinTossLineRenderer.positionCount = arc.arcPoints.Length;
             _coinTossLineRenderer.SetPositions(arc.arcPoints);
+        }
+
+        private void CoinHitsGround(Transform coin, Rigidbody coinRb, Vector3 hitPoint)
+        {
+            if (_showArcInGame)
+                _coinTossLineRenderer.positionCount = 0;
+            coin.transform.rotation = Quaternion.identity;
+            coin.position = new Vector3(coin.position.x, -1.98f, coin.position.z);
+            coinRb.velocity = Vector3.zero;
+            coinRb.constraints = RigidbodyConstraints.FreezeAll;
+            Destroy(coin.gameObject, 25f);
+
+            AudioSource _as = coin.GetComponent<AudioSource>();
+            _as.pitch = Random.Range(0.9f, 1.1f);
+            _as.Play();
+        }
+
+        private void DistractGuards(Transform coin)
+        {
+            Collider[] nearbyGuards = Physics.OverlapSphere(
+                coin.position,
+                _coinDistractRange,
+                _distractTargets
+            );
+            foreach (Collider guard in nearbyGuards)
+            {
+                guard.transform.parent.TryGetComponent(out AIDistractionReciever aidr);
+                aidr?.Distract(coin);
+            }
         }
     }
 }

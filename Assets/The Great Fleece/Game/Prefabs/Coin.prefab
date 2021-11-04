@@ -11,11 +11,10 @@ GameObject:
   - component: {fileID: 4340418032914618}
   - component: {fileID: 708257245959204837}
   - component: {fileID: 708257245959204843}
-  - component: {fileID: 708257245959204842}
   - component: {fileID: 708257245959204841}
   - component: {fileID: -835158842488473467}
   - component: {fileID: 453738194183376436}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,25 +85,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!95 &708257245959204842
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1667124884920464}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!82 &708257245959204841
 AudioSource:
   m_ObjectHideFlags: 0
@@ -116,7 +96,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7a03079805ab64c8ea844d80fdc43366, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -229,7 +209,7 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: -1
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &8954024721239310397
 GameObject:
@@ -241,7 +221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8435650908594352325}
   - component: {fileID: 3866596163677338675}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Glint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -32,7 +32,7 @@ namespace TGF
 
         public void PlayerEnteredDetection_PRX()
         {
-            Debug.Log("Player detected via proximity");
+            Debug.Log("Player detected via proximity to " + name);
 
             if (_proximitySensor.DetectedObjects[0])
                 _proximitySensor.DetectedObjects[0].SetActive(false);

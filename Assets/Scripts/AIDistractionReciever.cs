@@ -24,7 +24,7 @@ namespace TGF
             _ainm = GetComponent<NavMeshAgent>();
         }
 
-        public void Distract(Vector3 distractionOrigin, float distractionTime = -1)
+        public void Distract(Transform distractionOrigin, float distractionTime = -1)
         {
             if (!_isDistracted)
             {
@@ -36,11 +36,11 @@ namespace TGF
             }
         }
 
-        private IEnumerator GuardIsDistracted(Vector3 distractionOrigin, float distractionTime)
+        private IEnumerator GuardIsDistracted(Transform distractionOrigin, float distractionTime)
         {
             bool wasPathfindingEnabled = _aiwp && _aiwp.IsPathfinding;
             _aiwp?.DisablePathfinding();
-            _ainm.SetDestination(distractionOrigin);
+            _ainm.SetDestination(distractionOrigin.position);
             _anim?.SetBool("Walking", true);
 
             while (Vector3.Distance(transform.position, _ainm.destination) > 0.5f)
