@@ -7,10 +7,13 @@ namespace TGF
     public class AudioTrigger : MonoBehaviour
     {
         [SerializeField] private AudioSource _camera;
+        [SerializeField] private bool _playOnce;
         [SerializeField] private List<string> _activationTags;
         [Space]
         [SerializeField] private AudioClip[] _playOnEnter;
         [SerializeField] private AudioClip[] _playOnExit;
+
+        private bool _hasBeenPlayed;
 
 
         private void OnTriggerEnter(Collider other) => PlayAnyClips(other.tag, _playOnEnter);
@@ -21,10 +24,11 @@ namespace TGF
         {
             if (_activationTags.Contains(tag))
             {
-                foreach (AudioClip clip in clipList)
+                if ((_playOnce && !_hasBeenPlayed) || !_playOnce)
                 {
-                    _camera.PlayOneShot(clip);
-                    Debug.Log("Audio clip (" + clip.name + ") is now playing for " + clip.length + " seconds!");
+                    _hasBeenPlayed = true;
+                    foreach (AudioClip clip in clipList)
+                        _camera.PlayOneShot(clip);
                 }
             }
         }

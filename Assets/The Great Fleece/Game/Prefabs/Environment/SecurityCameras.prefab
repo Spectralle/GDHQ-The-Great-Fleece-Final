@@ -9,9 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4292925433437978}
-  - component: {fileID: 950032271966247401}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: Camera Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33,18 +32,6 @@ Transform:
   m_Father: {fileID: 4338286230955942}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &950032271966247401
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1267076819140348}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52ef1abdde741c24cba0c7326bbdd240, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1330035826601220
 GameObject:
   m_ObjectHideFlags: 0
@@ -111,7 +98,7 @@ GameObject:
   - component: {fileID: 64713049811544802}
   - component: {fileID: 8254826393038161332}
   m_Layer: 0
-  m_Name: CameraCone
+  m_Name: Camera Cone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -206,7 +193,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c951fbd5451565c4b9d341c4beeac873, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _events: []
+  _enterEvents:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 23355972756435174}
+        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+        m_MethodName: set_material
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2100000, guid: 876cac71917e75742a6fdb195c2a1bdf, type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8254826393038161332}
+        m_TargetAssemblyTypeName: TGF.SecurityCamera, Assembly-CSharp
+        m_MethodName: StartCutscene
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _enableExitEvents: 0
+  _exitEvents:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1475526318514572
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,7 +237,7 @@ GameObject:
   - component: {fileID: 23191162395423430}
   - component: {fileID: 4081819219805760262}
   m_Layer: 0
-  m_Name: Camera_1
+  m_Name: Camera Rotator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -321,7 +338,7 @@ GameObject:
   - component: {fileID: 33524150358320612}
   - component: {fileID: 23987209129505214}
   m_Layer: 0
-  m_Name: Holder
+  m_Name: Camera Mount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -399,9 +416,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4833509350456938}
-  - component: {fileID: 2132827584534835627}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: Camera Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -423,18 +439,6 @@ Transform:
   m_Father: {fileID: 4338286230955942}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2132827584534835627
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1533767462133586}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52ef1abdde741c24cba0c7326bbdd240, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1545145990394546
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,7 +451,7 @@ GameObject:
   - component: {fileID: 33449465357842278}
   - component: {fileID: 23362117625293144}
   m_Layer: 0
-  m_Name: Holder
+  m_Name: Camera Mount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -530,7 +534,7 @@ GameObject:
   - component: {fileID: 64680296577853544}
   - component: {fileID: 7391990508250986760}
   m_Layer: 0
-  m_Name: CameraCone
+  m_Name: Camera Cone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -625,7 +629,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c951fbd5451565c4b9d341c4beeac873, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _events: []
+  _enterEvents:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 23762052703765058}
+        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+        m_MethodName: set_material
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2100000, guid: 876cac71917e75742a6fdb195c2a1bdf, type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7391990508250986760}
+        m_TargetAssemblyTypeName: TGF.SecurityCamera, Assembly-CSharp
+        m_MethodName: StartCutscene
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _enableExitEvents: 0
+  _exitEvents:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1807756980753354
 GameObject:
   m_ObjectHideFlags: 0
@@ -639,7 +673,7 @@ GameObject:
   - component: {fileID: 23696360487886260}
   - component: {fileID: 2052494924810276378}
   m_Layer: 0
-  m_Name: Camera_1
+  m_Name: Camera Rotator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

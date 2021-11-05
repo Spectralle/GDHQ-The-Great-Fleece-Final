@@ -1,17 +1,39 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class SecurityCamera : MonoBehaviour
+namespace TGF
 {
-    private Animator _anim;
-
-
-    public void StopCameraMovement()
+    [RequireComponent(typeof(Collider))]
+    public class SecurityCamera : MonoBehaviour
     {
-        if (!_anim)
-            _anim = GetComponent<Animator>();
+        [SerializeField] private UnityEvent _enterEvents;
+        [SerializeField] private bool _enableExitEvents;
+        [SerializeField] private UnityEvent _exitEvents;
 
-        _anim.StopPlayback();
-    }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.CompareTag("Player"))
+                _enterEvents.Invoke();
+        }
+
+        private void OnTriggerExit(Collider other)
+        {
+            if (_enableExitEvents && other.CompareTag("Player"))
+            {
+                StopAllCoroutines();
+                _exitEvents.Invoke();
+            }
+        }
+
+        public void StartCutscene(GameObject obj) => StartCoroutine(StartCS(obj));
+
+        private IEnumerator StartCS(GameObject obj)
+        {
+            yield return new WaitForSecondsRealtime(0.5f);
+            obj.SetActive(true);
+            GameObject.FindGameObjectWithTag("Player").SetActive(false);
+        }
+    } 
 }

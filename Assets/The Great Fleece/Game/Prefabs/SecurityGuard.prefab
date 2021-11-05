@@ -5964,9 +5964,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 645baa5ef8f256c4b9101fdcf8bc6534, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Length: 6
+  Length: 5
   BaseSize: 0
-  FOVAngle: 55
+  FOVAngle: 35
   ElevationAngle: 26.9
   Resolution: 0
 --- !u!54 &6509502596299609485

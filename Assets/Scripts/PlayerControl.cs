@@ -10,6 +10,7 @@ namespace TGF
     {
         [Header("Click Movement:")]
         [SerializeField] private LayerMask _moveArea;
+        [SerializeField] private Transform _destinationMark;
         [Header("Coin Toss Ability:")]
         [SerializeField] private Transform _coinOrigin;
         [SerializeField] private GameObject _coinPrefab;
@@ -35,7 +36,7 @@ namespace TGF
         private AnimState _animState;
         private float _gravity;
         private int _coinsTossedAlready = 0;
-        Vector3 target;
+        private LineRenderer _pathLineRenderer;
 
         [System.Serializable]
         public struct ArcData
@@ -51,14 +52,16 @@ namespace TGF
         }
 
 
-        private void Start()
+        private void Awake()
         {
-            _cameraTransform = Camera.main;
             _agent = GetComponent<NavMeshAgent>();
             _anim = GetComponent<Animator>();
+            _pathLineRenderer = GetComponent<LineRenderer>();
             _gravity = Physics.gravity.y;
             _coinTossLineRenderer.positionCount = 0;
         }
+
+        private void Start() => _cameraTransform = Camera.main;
 
         private void Update()
         {
@@ -67,14 +70,20 @@ namespace TGF
                 #region State checks
                 if (_agent.velocity != Vector3.zero)
                 {
+                    _pathLineRenderer.positionCount = _agent.path.corners.Length;
+                    _pathLineRenderer.SetPositions(_agent.path.corners);
                     _animState = AnimState.Walking;
                     _anim.SetBool("Walking", true);
                 }
                 else
                 {
+                    _pathLineRenderer.positionCount = 0;
                     _animState = AnimState.Idle;
                     _anim.SetBool("Walking", false);
                 }
+
+                if (_destinationMark && Vector3.Distance(transform.position, _worldDestination) < 0.2f)
+                    _destinationMark.gameObject.SetActive(false);
                 #endregion
 
                 #region Player Input
@@ -89,16 +98,21 @@ namespace TGF
 
         private void SetDestinationToClickPosition()
         {
-            if (Physics.Raycast(_cameraTransform.ScreenPointToRay(Input.mousePosition), out RaycastHit hit, _moveArea))
+            if (Physics.Raycast(_cameraTransform.ScreenPointToRay(Input.mousePosition), out RaycastHit hit, 60, _moveArea))
             {
                 _worldDestination = hit.point;
+                if (_destinationMark)
+                {
+                    _destinationMark.gameObject.SetActive(true);
+                    _destinationMark.position = _worldDestination + new Vector3(0, 0.02f, 0);
+                }
                 _agent.SetDestination(_worldDestination);
             }
         }
 
         private IEnumerator TossCoin()
         {
-            if (Physics.Raycast(_cameraTransform.ScreenPointToRay(Input.mousePosition), out RaycastHit hit, 30, _validCoinArea))
+            if (Physics.Raycast(_cameraTransform.ScreenPointToRay(Input.mousePosition), out RaycastHit hit, 35, _validCoinArea))
             {
                 PrepareToTossCoin(hit.point, out AnimState currentState);
 

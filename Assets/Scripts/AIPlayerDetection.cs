@@ -21,7 +21,7 @@ namespace TGF
 
         public void PlayerEnteredDetection_LOS()
         {
-            Debug.Log("Player detected via Line-Of-Sight");
+            Debug.Log("Player detected via Line-Of-Sight by " + name);
 
             if (_lineOfSightSensor.DetectedObjects[0])
                 _lineOfSightSensor.DetectedObjects[0].SetActive(false);
