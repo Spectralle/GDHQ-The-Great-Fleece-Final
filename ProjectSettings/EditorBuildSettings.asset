@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/The Great Fleece/Game/_Scenes/Main.unity
+    guid: 9b026484f43ebc14f85fe756ec990657
   m_configObjects: {}

@@ -40,6 +40,7 @@ namespace TGF
         {
             bool wasPathfindingEnabled = _aiwp && _aiwp.IsPathfinding;
             _aiwp?.DisablePathfinding();
+            _aiwp?.SetIsDistracted(true);
             _ainm.SetDestination(distractionOrigin.position);
             _anim?.SetBool("Walking", true);
 
@@ -56,9 +57,12 @@ namespace TGF
             }
 
             _anim?.SetBool("Alert", false);
+            _anim?.SetBool("Walking", true);
 
             if (wasPathfindingEnabled)
-                _aiwp.EnablePathfinding();
+                _aiwp?.EnablePathfinding();
+            _aiwp?.SetIsDistracted(false);
+            _aiwp?.AfterDistraction();
         }
     }
 }

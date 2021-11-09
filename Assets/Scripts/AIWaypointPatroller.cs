@@ -13,6 +13,9 @@ namespace TGF
         public bool IsPathfinding => _isPathfinding;
         public void EnablePathfinding() => _isPathfinding = true;
         public void DisablePathfinding() => _isPathfinding = false;
+        public void SetIsDistracted(bool isDistracted) => _isDistracted = isDistracted;
+        public void AfterDistraction() => _afterDistraction = true;
+
         [SerializeField, Range(0f, 50f)] private float _waitAtWaypoint = 5f;
         [SerializeField, Range(0.1f, 10f)] private float _turnSpeed = 2.5f;
         [SerializeField, Range(0f, 3f)] private float _turnEarlyDist = 0.5f;
@@ -30,12 +33,38 @@ namespace TGF
             public Waypoint Primary;
             public bool AllowPathBranch;
             public Waypoint Alternate;
+
+            public WaypointContainer(Waypoint Primary)
+            {
+                this.Primary = Primary;
+                this.AllowPathBranch = false;
+                this.Alternate = new Waypoint(Vector3.zero, Vector3.zero);
+            }
+
+            public WaypointContainer(Waypoint Primary, bool AllowPathBranch, Waypoint Alternate)
+            {
+                this.Primary = Primary;
+                this.AllowPathBranch = AllowPathBranch;
+                this.Alternate = Alternate;
+            }
         }
         [System.Serializable]
         public struct Waypoint
         {
             public Vector3 Position;
             public Vector3 LookDirection;
+
+            public Waypoint(Vector3 Position)
+            {
+                this.Position = Position;
+                this.LookDirection = new Vector3(0, 0, 0);
+            }
+
+            public Waypoint(Vector3 Position, Vector3 LookDirection)
+            {
+                this.Position = Position;
+                this.LookDirection = LookDirection;
+            }
         }
 
         private NavMeshAgent _agent;
@@ -48,9 +77,12 @@ namespace TGF
             Idle,
             Walking,
         }
-        private AgentState _agentState;
+        [SerializeField] private AgentState _agentState;
         private Waypoint _currentWaypoint;
         private Vector3 targetDirection = Vector3.zero;
+        [SerializeField] private bool _isDistracted;
+        [SerializeField] private bool _afterDistraction;
+
 
 
         private void Awake()
@@ -81,29 +113,47 @@ namespace TGF
                     if (_waitTimer < _waitAtWaypoint)
                         Wait();
                     else
-                        SetDestinationAndStartWalking();
+                    {
+                        if (_waypoints.Count > 0)
+                            SetDestinationAndStartWalking();
+                    }
                 }
                 else
                 {
-                    float remainingDistance = _agent.remainingDistance - _agent.stoppingDistance;
-                    if (remainingDistance < 0.01f)
+                    if (!_isDistracted)
                     {
-                        StopWalking();
-                        _waitTimer = Random.Range(0f, _waitAtWaypoint / 4);
-                    }
+                        float remainingDistance = _agent.remainingDistance - _agent.stoppingDistance;
+                        if (remainingDistance < 0.01f)
+                        {
+                            StopWalking();
+                            _waitTimer = Random.Range(0f, _waitAtWaypoint / 4);
+                        }
 
-                    if (remainingDistance < _turnEarlyDist)
-                    {
-                        targetDirection = _currentWaypoint.LookDirection.normalized;
-                        RotateToFaceDirection();
+                        if (remainingDistance < _turnEarlyDist)
+                        {
+                            targetDirection = _currentWaypoint.LookDirection.normalized;
+                            RotateToFaceDirection();
+                        }
                     }
                 }
             }
-            //else
-            //{
-            //    if (_agent.destination != transform.position)
-            //        _agent.SetDestination(transform.position);
-            //}
+
+            if (_afterDistraction)
+            {
+                float remainingDistance = _agent.remainingDistance - _agent.stoppingDistance;
+                if (remainingDistance < 0.01f)
+                {
+                    StopWalking();
+                    _afterDistraction = false;
+                    _waitTimer = Random.Range(0f, _waitAtWaypoint / 4);
+                }
+
+                if (remainingDistance < _turnEarlyDist)
+                {
+                    targetDirection = _currentWaypoint.LookDirection.normalized;
+                    RotateToFaceDirection();
+                }
+            }
         }
 
         private void SetDestinationAndStartWalking()
@@ -125,14 +175,18 @@ namespace TGF
                 else
                     _currentWaypointID = 0;
             }
+            _currentWaypointID = Mathf.Clamp(_currentWaypointID, 0, _waypoints.Count - 1);
 
             bool useAlternate = _waypoints[_currentWaypointID].AllowPathBranch && Random.value > 0.5f;
             _currentWaypoint = !useAlternate ? _waypoints[_currentWaypointID].Primary : _waypoints[_currentWaypointID].Alternate;
             _agent.SetDestination(_currentWaypoint.Position);
 
-            _agentState = AgentState.Walking;
-            _anim.SetBool("Walking", true);
-            _waitTimer = 0;
+            if (_currentWaypoint.Position == Vector3.zero || _waypoints[_currentWaypointID].Primary.Position != _currentWaypoint.Position)
+            {
+                _agentState = AgentState.Walking;
+                _anim.SetBool("Walking", true);
+                _waitTimer = 0;
+            }
         }
 
         private void Wait()

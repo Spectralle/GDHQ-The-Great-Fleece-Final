@@ -616,28 +616,7 @@ MonoBehaviour:
   _turnSpeed: 1.7
   _turnEarlyDist: 1
   _pingpongLoop: 1
-  _waypoints:
-  - Primary:
-      Position: {x: -13, y: -2, z: 16.3}
-      LookDirection: {x: -1, y: 0, z: 0}
-    AllowPathBranch: 0
-    Alternate:
-      Position: {x: 0, y: 0, z: 0}
-      LookDirection: {x: 0, y: 0, z: 0}
-  - Primary:
-      Position: {x: 14, y: -2, z: 16.3}
-      LookDirection: {x: 0, y: 0, z: 1}
-    AllowPathBranch: 0
-    Alternate:
-      Position: {x: -13.76, y: -2, z: 6.7}
-      LookDirection: {x: 0, y: 0, z: -1}
-  - Primary:
-      Position: {x: 14, y: -2, z: 2.5}
-      LookDirection: {x: 0, y: 0, z: -1}
-    AllowPathBranch: 0
-    Alternate:
-      Position: {x: 0, y: 0, z: 0}
-      LookDirection: {x: 0, y: 0, z: 0}
+  _waypoints: []
   _showDebugPath: 1
   _showPlaymodeDebugPath: 1
   _waypointColor: {r: 0, g: 1, b: 0, a: 1}
