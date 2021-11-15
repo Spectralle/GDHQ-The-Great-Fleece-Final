@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "com.febucci.custom-hierarchy": "https://github.com/febucci/unitypackage-custom-hierarchy.git",
     "com.unity.cinemachine": "2.6.11",
     "com.unity.collab-proxy": "1.3.9",
     "com.unity.ide.rider": "2.0.7",

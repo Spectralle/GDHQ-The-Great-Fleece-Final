@@ -58,3 +58,6 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+# Me trying to fix LFS
+Learning/*/LightingData.asset
+Learning/*/LightingData.asset.meta
