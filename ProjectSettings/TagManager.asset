@@ -3,14 +3,21 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Guard1
+  - Camera Change Trigger
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Post Processing
   - Water
   - UI
+  - Player
+  - LOS Obstruction
+  - Floor
+  - Guard
+  - Coin
   - 
   - 
   - 
@@ -31,12 +38,7 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Editor Only
   m_SortingLayers:
   - name: Default
     uniqueID: 0
